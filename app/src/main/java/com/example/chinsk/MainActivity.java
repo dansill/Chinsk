@@ -24,13 +24,13 @@ public class MainActivity extends AppCompatActivity {
     private static String TEXT1 = "text1";
     private static Random r = new Random();
     private static double li, wyn,licz;
-    static int l, l1, nr;
+    private static int l, l1, nr;
     private static String text, text1, k, k1;
     private static List<String> st1 = new ArrayList<>();
     private static List<String> st2 = new ArrayList<>();
     private static List<String> sth1 = new ArrayList<>();
     private static List<String> sth2;
-
+spieprt
     private static int setNumber() {
         nr = r.nextInt(st1.size());
         return nr;
