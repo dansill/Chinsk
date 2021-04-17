@@ -89,13 +89,13 @@ public class MainActivity extends AppCompatActivity {
         text = sharedPreferences.getString(TEXT, "");
         st1 = new ArrayList<>(Arrays.asList(text.replace("[", "").replace("]", "")
                 .replaceAll("\\s+", "").split(",")));
-        //st1 = Arrays.asList(text.replace("[", "").replace("]", "").replaceAll("\\s+", "").split(","));
+
         SharedPreferences sharedPreferences1 = getSharedPreferences(SHARED_PREFS1, MODE_PRIVATE);
         text1 = sharedPreferences1.getString(TEXT1, "");
         st2 = new ArrayList<>(Arrays.asList(text1.replace("[", "").replace("]", "")
                 .replaceAll("\\s+", "").split(",")));
-        //st2 = Arrays.asList(text1.replace("[", "").replace("]", "").replaceAll("\\s+", "").split(","));
-    }
+
+}
     public void reset(View f) {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         SharedPreferences sharedPreferences1 = getSharedPreferences(SHARED_PREFS1, MODE_PRIVATE);
