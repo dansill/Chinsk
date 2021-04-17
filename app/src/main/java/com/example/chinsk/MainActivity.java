@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private static String TEXT1 = "text1";
     private static Random r = new Random();
     private static double li, wyn,licz;
-    private static int l, l1, nr;
+    static int l, l1, nr;
     private static String text, text1, k, k1;
     private static List<String> st1 = new ArrayList<>();
     private static List<String> st2 = new ArrayList<>();
