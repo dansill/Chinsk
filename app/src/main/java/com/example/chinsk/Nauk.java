@@ -60,8 +60,3 @@ public class Nauk extends AppCompatActivity {
     }
 }
 
-
-
-
-
-

@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private static List<String> st2 = new ArrayList<>();
     private static List<String> sth1 = new ArrayList<>();
     private static List<String> sth2;
-spieprt
+d4d34d34d3
     private static int setNumber() {
         nr = r.nextInt(st1.size());
         return nr;
