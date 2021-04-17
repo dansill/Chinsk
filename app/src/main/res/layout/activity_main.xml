@@ -51,8 +51,8 @@
         android:background="@drawable/ic_launcher_background"
         android:onClick="nauczka"
         android:text="NAUKA"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/brudnopis" />
+        app:layout_constraintTop_toBottomOf="@+id/brudnopis"
+        tools:layout_editor_absoluteX="23dp" />
 
     <Button
         android:id="@+id/brudnopis"
