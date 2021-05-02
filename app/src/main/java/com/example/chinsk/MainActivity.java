@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         if (licz<2&&st1.size()<2){st1.remove(0);st2.remove(0);}
         EditText t = findViewById(R.id.wpisz);
         EditText t1 = findViewById(R.id.Widok);
-        try {
+
             String g = t1.getText().toString();
             sth1 = Arrays.asList(g.split(","));
             for (l = 0; l < sth1.size(); l++) {
@@ -81,9 +81,7 @@ public class MainActivity extends AppCompatActivity {
             editor1.putString(TEXT1, String.valueOf((st2)));
             editor1.apply();
             li = 0;wyn = 0;
-        } catch (UnsupportedOperationException e) {
-            t.setText("Sejwujemy bezpośrednio po urochomieniu Apki! Sorki");
-        } }
+         }
     public void loadData() {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         text = sharedPreferences.getString(TEXT, "");
@@ -101,6 +99,10 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences1 = getSharedPreferences(SHARED_PREFS1, MODE_PRIVATE);
         sharedPreferences.edit().clear().apply();
         sharedPreferences1.edit().clear().apply();
+        TextView a = findViewById(R.id.Widok);
+        EditText t = findViewById(R.id.wpisz);
+        t.setText("Insert answer");
+        a.setText("Insert question");
         loadData();
         licz=0;
     }
@@ -112,13 +114,7 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, Vid.class);
         startActivity(i);
     }
-   /* public void star(View v) {
-        loadData();
-        no.setNr(r.nextInt(st1.size()));
-        TextView a = findViewById(R.id.Widok);
-        int nr = no.getNr();
-        a.setText(st1.get(nr));
-    }*/
+
     public void spraw(View l) {
        try {
            li++;
@@ -135,9 +131,9 @@ public class MainActivity extends AppCompatActivity {
                 t1.setDuration(Toast.LENGTH_SHORT);
                 t1.setView(d);
                 t1.show();
-                Toast.makeText(this, "Dobrze\nTwój wynik to " + wyn / (li - 1) * 100 + " procent", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Good\nYour score: " + (int)(wyn / (li - 1) * 100) + " %", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "Żle\nTwój wynik to " + wyn / (li - 1) * 100 + " procent", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Wrong\nYour score:  " + (int)(wyn / (li - 1) * 100) + " %", Toast.LENGTH_SHORT).show();
             /*setContentView(R.layout.activity_main);
             VideoView videoView = findViewById(R.id.vi1);
             String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.kot4;
@@ -146,6 +142,6 @@ public class MainActivity extends AppCompatActivity {
             videoView.start();*/
             } }
         a.setText(st1.get(MainActivity.setNumber()));
-    }catch(NullPointerException e){ EditText t = findViewById(R.id.wpisz);
-           t.setText("Wprowadź pztania i odpowiedźi.");
+    }catch(Exception e){ EditText t = findViewById(R.id.wpisz);
+           t.setText("Something went wrong");
     }}}

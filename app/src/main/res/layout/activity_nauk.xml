@@ -25,8 +25,8 @@
         android:layout_height="49dp"
         android:layout_marginBottom="4dp"
         android:onClick="nauczk"
-        android:text="nauka brudnopis"
-        android:textSize="6sp"
+        android:text="NOTES"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/nau"
         app:layout_constraintEnd_toEndOf="parent" />
 
