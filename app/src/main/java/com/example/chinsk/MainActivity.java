@@ -116,8 +116,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void spraw(View l) {
-       try {
-           li++;
+       try {li++;
         TextView a = findViewById(R.id.Widok);
         EditText t = findViewById(R.id.wpisz);
         loadData();

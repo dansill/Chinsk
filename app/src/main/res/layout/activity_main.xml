@@ -9,41 +9,42 @@
 
     <EditText
         android:id="@+id/Widok"
-        android:layout_width="362dp"
-        android:layout_height="175dp"
+        android:layout_width="400dp"
+        android:layout_height="158dp"
         android:layout_marginTop="8dp"
         android:ellipsize="middle"
         android:fontFamily="sans-serif-black"
-        android:text="Question"
-        android:textColor="@color/purple_700"
+        android:text="Insert questions separated by commas"
+        android:textColor="@color/ic_launcher_background"
         android:textColorHighlight="@color/teal_200"
         android:textColorLink="#FFFFFF"
-        android:textSize="50sp"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/save" />
 
     <EditText
         android:id="@+id/wpisz"
-        android:layout_width="364dp"
-        android:layout_height="38dp"
+        android:layout_width="402dp"
+        android:layout_height="42dp"
         android:background="@color/purple_200"
         android:ems="10"
         android:inputType="textPersonName"
         android:shadowColor="@color/teal_700"
-        android:text="Answer"
+        android:text="Insert answers separated by commas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Widok" />
 
     <Button
         android:id="@+id/brudnopis"
-        android:layout_width="110dp"
+        android:layout_width="80dp"
         android:layout_height="40dp"
 
         android:onClick="brud"
         android:text="NOTES"
-        android:textSize="14sp"
+        android:textSize="10sp"
         app:backgroundTint="#03A9F4"
         app:layout_constraintStart_toEndOf="@+id/save"
         tools:layout_editor_absoluteY="0dp" />
@@ -63,31 +64,34 @@
 
     <Button
         android:id="@+id/save"
-        android:layout_width="110dp"
+        android:layout_width="80dp"
         android:layout_height="40dp"
 
         android:text="SAVE"
+        android:textSize="10sp"
         app:backgroundTint="#F44336"
         app:layout_constraintStart_toEndOf="@+id/button2"
         tools:layout_editor_absoluteY="0dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="110dp"
+        android:layout_width="80dp"
         android:layout_height="40dp"
 
         android:onClick="reset"
         android:text="Reset"
+        android:textSize="10sp"
         app:backgroundTint="@color/ic_launcher_background"
-        tools:layout_editor_absoluteX="18dp" />
+        tools:layout_editor_absoluteX="1dp" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="110dp"
+        android:layout_width="80dp"
         android:layout_height="40dp"
 
         android:onClick="nauczka"
-        android:text="LEARNING"
+        android:text="LEARN"
+        android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/brudnopis"
         tools:layout_editor_absoluteY="0dp" />
 
