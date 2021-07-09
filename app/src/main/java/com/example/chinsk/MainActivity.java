@@ -69,9 +69,7 @@ public class MainActivity extends AppCompatActivity {
             for (l1 = 0; l1 < sth2.size(); l1++) {
                 k1 = sth2.get(l1);
                 st2.add(k1); }
-            /*Intent i = new Intent(MainActivity.this, Monit.class);
-            i.putExtra("allst", stt1.toString() + stt2.toString());
-            startActivity(i);*/
+
             SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString(TEXT, String.valueOf((st1)));
@@ -86,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         text = sharedPreferences.getString(TEXT, "");
         st1 = new ArrayList<>(Arrays.asList(text.replace("[", "").replace("]", "")
-                .replaceAll("\\s+", "").split(",")));
+                .split(",")));
 
         SharedPreferences sharedPreferences1 = getSharedPreferences(SHARED_PREFS1, MODE_PRIVATE);
         text1 = sharedPreferences1.getString(TEXT1, "");
