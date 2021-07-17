@@ -5,8 +5,8 @@
     android:id="@+id/bachg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#38B5ED"
-    tools:context=".Vid1">
+    android:background="#4CAF50"
+    tools:context=".Vid2">
 
     <EditText
         android:id="@+id/ed"
@@ -15,7 +15,7 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:textColor="@color/purple_700"
+        android:textColor="#F83F7E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
         android:layout_width="156dp"
         android:layout_height="55dp"
         android:text="SAVE"
-        app:backgroundTint="#E33771"
+        app:backgroundTint="#EA5555"
         app:layout_constraintBottom_toTopOf="@+id/ed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

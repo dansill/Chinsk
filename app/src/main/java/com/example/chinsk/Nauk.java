@@ -1,9 +1,7 @@
 package com.example.chinsk;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,10 +29,7 @@ public class Nauk extends AppCompatActivity {
         loadData();
         updateViews();
     }
-    public void nauczk(View f) {
-        Intent i = new Intent(this, Vid.class);
-        startActivity(i);
-    }
+
     public void loadData() {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         text = sharedPreferences.getString(TEXT, "");

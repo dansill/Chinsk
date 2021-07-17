@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher1_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Chinsk">
-        <activity android:name=".Vid1"></activity>
+        <activity android:name=".Vid2"></activity>
+        <activity android:name=".Vid1" />
         <activity android:name=".Vid" />
         <activity android:name=".Nauk" />
         <activity android:name=".MainActivity">

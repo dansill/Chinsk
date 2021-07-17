@@ -27,6 +27,7 @@
         android:layout_width="156dp"
         android:layout_height="55dp"
         android:text="SAVE"
+        app:backgroundTint="#C33766"
         app:layout_constraintBottom_toTopOf="@+id/ed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

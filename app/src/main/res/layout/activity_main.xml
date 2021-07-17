@@ -8,6 +8,20 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/brudnopis4"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+
+        android:onClick="brud2"
+        android:text="NOTES 2"
+        android:textSize="10sp"
+        app:backgroundTint="#358A16"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/brudnopis3"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
         android:id="@+id/brudnopis3"
         android:layout_width="80dp"
         android:layout_height="40dp"
@@ -15,11 +29,11 @@
         android:onClick="brud1"
         android:text="NOTES 1"
         android:textSize="10sp"
-        app:backgroundTint="#03A9F4"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:backgroundTint="#2CA0D3"
+        app:layout_constraintEnd_toStartOf="@+id/brudnopis4"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/brudnopis"
-        tools:layout_editor_absoluteY="8dp" />
+        tools:layout_editor_absoluteY="0dp" />
 
     <EditText
         android:id="@+id/Widok"
@@ -59,7 +73,7 @@
         android:onClick="brud"
         android:text="NOTES"
         android:textSize="10sp"
-        app:backgroundTint="#03A9F4"
+        app:backgroundTint="@color/ic_launcher_background"
         app:layout_constraintEnd_toStartOf="@+id/brudnopis3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/save"
@@ -99,9 +113,10 @@
         android:onClick="reset"
         android:text="Reset"
         android:textSize="10sp"
-        app:backgroundTint="@color/ic_launcher_background"
+        app:backgroundTint="#E6692F"
         app:layout_constraintEnd_toStartOf="@+id/save"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -114,7 +129,7 @@
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/brudnopis3"
+        app:layout_constraintStart_toEndOf="@+id/brudnopis4"
         tools:layout_editor_absoluteY="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
