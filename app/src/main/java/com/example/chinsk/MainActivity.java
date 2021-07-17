@@ -112,6 +112,10 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, Vid.class);
         startActivity(i);
     }
+    public void brud1(View f) {
+        Intent i = new Intent(this, Vid1.class);
+        startActivity(i);
+    }
 
     public void spraw(View l) {
        try {li++;
