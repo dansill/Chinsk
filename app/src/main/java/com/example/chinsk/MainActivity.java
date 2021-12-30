@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
     private static String TEXT = "text";
     private static String TEXT1 = "text1";
     private static Random r = new Random();
-    private static double li, wyn,licz;
+    private static double li, wyn;
     static int l, l1, nr;
     private static String text, text1, k, k1;
-    private static List<String> st1 = new ArrayList<>();
-    private static List<String> st2 = new ArrayList<>();
+    private static List<String> st1;
+    private static List<String> st2;
     private static List<String> sth1 = new ArrayList<>();
     private static List<String> sth2;
 
@@ -48,14 +48,14 @@ public class MainActivity extends AppCompatActivity {
         save1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sav();
+               sav();
             }
         });
     }
     public void sav() {
-        licz++;
+       // licz++;
         loadData();
-        if (licz<2&&st1.size()<2){st1.remove(0);st2.remove(0);}
+      if (st1.get(0).contentEquals("") ){st1.remove(0);st2.remove(0);}
         EditText t = findViewById(R.id.wpisz);
         EditText t1 = findViewById(R.id.Widok);
 
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         t.setText("Insert answer");
         a.setText("Insert question");
         loadData();
-        licz=0;
+       // licz=0;
     }
     public void nauczka(View f) {
         Intent i = new Intent(this, Nauk.class);

@@ -9,8 +9,8 @@
 
     <EditText
         android:id="@+id/nau"
-        android:layout_width="381dp"
-        android:layout_height="314dp"
+        android:layout_width="344dp"
+        android:layout_height="298dp"
         android:textColor="@color/purple_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

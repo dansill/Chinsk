@@ -113,7 +113,7 @@
         android:onClick="reset"
         android:text="Reset"
         android:textSize="9sp"
-        app:backgroundTint="#E6692F"
+        app:backgroundTint="#E91E63"
         app:layout_constraintEnd_toStartOf="@+id/save"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"

@@ -19,7 +19,7 @@ public class Nauk extends AppCompatActivity {
     private static String TEXT1 = "text1";
     private String text1;
     int l, l1;
-    String k,k1;
+     String k,k1;
     List<String> stt1 = new ArrayList<>();
     List<String> stt2 = new ArrayList<>();
     @Override
@@ -37,6 +37,7 @@ public class Nauk extends AppCompatActivity {
         text1 = sharedPreferences1.getString(TEXT1, "");
     }
     public void updateViews() {
+
         TextView t = findViewById(R.id.nau);
         String g = text;
         List<String> sth1 = new ArrayList<>(Arrays.asList(g.split(",")));
@@ -50,8 +51,8 @@ public class Nauk extends AppCompatActivity {
             k1 = sth2.get(l1);
             stt2.add(l1 + 1 + "." + k1);
         }
-        t.setText(stt1.toString().replace("[", "").replace("]", "") + "\n"
-                + stt2.toString().replace("[", "").replace("]", ""));
+        if(k.contentEquals("") ){}else{t.setText(stt1.toString().replace("[", "").replace("]", "") + "\n"
+                + stt2.toString().replace("[", "").replace("]", ""));}
     }
 }
 
