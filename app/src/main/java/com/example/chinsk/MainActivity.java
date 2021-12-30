@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
     private static int setNumber() {
         nr = r.nextInt(st1.size());
-         }
-
+        return nr;
+    }
     private static int getNumber() {
         return nr;
     }
@@ -128,9 +128,8 @@ public class MainActivity extends AppCompatActivity {
         loadData();
         if (li > 1) {
             String input = t.getText().toString();
-            if (input.replaceAll("\\s+", "").equalsIgnoreCase
-                    (st2.get(MainActivity.getNumber()).replaceAll("\\s+", "")))
-            {   wyn++;
+            if (input.replaceAll("\\s+", "").equalsIgnoreCase(st2.get(MainActivity.getNumber()).replaceAll("\\s+", ""))) {
+                wyn++;
                 ImageView d = new ImageView(getApplicationContext());
                 d.setImageResource(R.drawable.nymph);
                 Toast t1 = new Toast(getApplicationContext());
@@ -147,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
             videoView.setVideoURI(uri);
             videoView.start();*/
             } }
-        a.setText(st1.get(MainActivity.setNumber())); }
-       catch(Exception e){ EditText t = findViewById(R.id.wpisz);
+        a.setText(st1.get(MainActivity.setNumber()));
+    }catch(Exception e){ EditText t = findViewById(R.id.wpisz);
            t.setText("Something went wrong");
     }}}
