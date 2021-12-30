@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                 t1.setView(d);
                 t1.show();
                 Toast.makeText(this, "Good\nYour score: " + (int)(wyn / (li - 1) * 100) + " %", Toast.LENGTH_SHORT).show();
-            } else {
+            } else  {
                 Toast.makeText(this, "Wrong\nYour score:  " + (int)(wyn / (li - 1) * 100) + " %", Toast.LENGTH_SHORT).show();
             /*setContentView(R.layout.activity_main);
             VideoView videoView = findViewById(R.id.vi1);
