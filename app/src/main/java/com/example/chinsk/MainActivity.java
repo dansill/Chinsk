@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
             String input = t.getText().toString();
             if (input.replaceAll("\\s+", "").equalsIgnoreCase(st2.get(MainActivity.getNumber()).replaceAll("\\s+", ""))) {
                 wyn++;
-                ImageView d = new ImageView(getApplicationContext());
+                     ImageView d = new ImageView(getApplicationContext());
                 d.setImageResource(R.drawable.nymph);
                 Toast t1 = new Toast(getApplicationContext());
                 t1.setDuration(Toast.LENGTH_SHORT);
